@@ -1,0 +1,43 @@
+{
+    "name": "mqtt-adapter",
+    "version": "1.0.0",
+    "description": "MQTT adapter service",
+    "main": "index.js",
+    "scripts": {
+        "nodemon": "nodemon -L app.js",
+        "start": "node app.js",
+        "test:lint": "eslint lib app.js --ext js",
+        "test": "jest --runInBand --forceExit",
+        "test:coverage": "npm run test -- --coverage"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:2SmartCloud/2smart-standalone-mqtt-adapter-bridge.git"
+    },
+    "author": "2Smart",
+    "dependencies": {
+        "homie-sdk": "github:2SmartCloud/2smart-standalone-homie-sdk",
+        "livr": "^2.3.1"
+    },
+    "devDependencies": {
+        "babel-eslint": "^10.1.0",
+        "eslint": "^7.1.0",
+        "eslint-config-webbylab": "^5.3.0",
+        "eslint-plugin-fetch": "0.0.1",
+        "eslint-plugin-import": "^2.20.2",
+        "eslint-plugin-jest": "^23.13.2",
+        "eslint-plugin-more": "^0.3.2",
+        "eslint-plugin-no-require-lodash": "^1.1.0",
+        "eslint-plugin-prefer-spread": "^1.0.3",
+        "eslint-plugin-react": "^7.20.0",
+        "eslint-plugin-security": "^1.4.0",
+        "jest": "^26.0.1",
+        "nodemon": "^2.0.4"
+    },
+    "jest": {
+        "verbose": true,
+        "collectCoverageFrom": [
+            "**/lib/**/*.js"
+        ]
+    }
+}
