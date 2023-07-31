@@ -12,11 +12,11 @@
     },
     "repository": {
         "type": "git",
-        "url": "git@github.com:2SmartCloud/2smart-standalone-mqtt-adapter-bridge.git"
+        "url": "git@github.com:2SmartCloud/2smartdev/2smart-standalone-mqtt-adapter-bridge.git"
     },
     "author": "2Smart",
     "dependencies": {
-        "homie-sdk": "github:2SmartCloud/2smart-standalone-homie-sdk",
+        "homie-sdk": "^1.0.0",
         "livr": "^2.3.1"
     },
     "devDependencies": {
